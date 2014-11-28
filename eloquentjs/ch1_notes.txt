@@ -1,0 +1,18 @@
+## Chapter 1
+
+### There are six (6) basic types of values in JavaScript
++numbers
++strings
++Booleans
++objects
++functions
++undefined values
+
+To create a value, you merely invoke its name.
+
+JavaScript uses 64 bits to store a single number value.
+
+For N decimal digits, the upper limit of numbers that can be represented is 10 to the N
+Given 63 binary digits, you can represent 2 to the 64 or about 18 quintillion (18 zeroes)
+
+NaN - Not a number - even though it is a value of the number type. Results when your calcultions don't yield a precise, meaningful result.
