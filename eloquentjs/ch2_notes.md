@@ -110,4 +110,9 @@ switch() {
 
 // or /**/
 
+###Summary
 
+The environment is the set of variables defined.
+
+Functions are special values that encapsulate a piece of program.
+Invoke functions by writing functionName(arg1, arg2)
