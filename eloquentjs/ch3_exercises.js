@@ -33,3 +33,21 @@ console.log("try 100 " + isEven(100));
 console.log("try 75 " + isEven(75));
 console.log("try -1 " + isEven(-1));
 console.log("try -2 " + isEven(-2));
+
+
+// find a value in a string
+
+function countBs(str, searchValue) {
+    var bCount = 0;
+    for (var i = 0; i < str.length; i++){
+        if ( str.charAt(i) == searchValue) {
+            bCount = bCount + 1;
+        }
+    }
+    return bCount; 
+  //   returns a number indicating how many uppercase "B"s are in the string   
+}
+
+
+console.log( countBs("kkkkkk jjjj", 'j'));
+
