@@ -146,3 +146,48 @@ Most recursion is actually slower than looping.
 The basic rule is not to worry about efficiency until you know for sure that the program is too slow.
 
 If it is, find out which parts are taking up the most time and start exchanging elegance for efficiency in those parts.
+
+###Growing Functions
+
+There are 2 more or less natural ways for functions to be introduced into a programs
+
+First is - you find yourself writing similar code multiple times. -> Take repeated functionality, find a name for it, and put it into a function.
+
+Second - you need some functionality you haven't written yet and that sounds like it deserves a function. You start by naming it, then write the body. 
+
+You might even write code that will use the function before you write the function itself.
+
+How difficult it is to find a good name for a function is a good indicationof how clear a concept it is that you're tyring to wrap.
+
+
+A rule of thumb is to not add cleverness unless you are absolutely sure you're going to need it.
+
+It can be tempting to write general "frameworks" for every little bit of functionality you come across. Resist that urge. You won't get any real work done, and you'll end up writing a lot of code that no one will ever use.
+
+###Functions and Side Effects
+
+Funtions - called for side effects or called for value. (And it's also possible)
+
+Functions that combine values are easier to combine in new ways than functions that directly perform side effects.
+
+A pure function is a specific kind of value-producing function that not only has no side effects but also doesn't rely on side effects from ther code.
+
+E.g. it doesn't read global variables that are occasionally changed by other code.
+
+Pure functions: When called with the same arguments will always produce the same value. This makes it easy to reason about. A call to such a function can be mentally substituted by its result, without changing the meaning of the code.
+
+###Summary
+
+the function keyword, when used as an expression, can create a function value.
+
+When used as a statement, it can be used to declare a variable and give it a function as its value.
+
+// Create a function value f
+var f = function(a) {
+	console.log(a+2);
+};
+
+// Declare g to be a function
+function g(a, b) {
+	return a * b * 3.5;
+}
